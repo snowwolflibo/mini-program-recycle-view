@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "recycle-view": "../../recycle-view/recycle-view",
+    "recycle-item": "../../recycle-view/recycle-item"
+  }
+}

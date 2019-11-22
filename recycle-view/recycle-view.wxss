@@ -1,0 +1,5 @@
+/* recycle-view/recycle-view.wxss */
+:host {
+  display: block;
+  width: 100%;
+}

@@ -1,0 +1,12 @@
+.list {
+  text-align: center;
+}
+
+.list-item {
+  /* 设置border方便观察布局 */
+  border: 1px solid blue;
+  /* border-box防止元素高度因为border变化 */
+  box-sizing: border-box;
+  /* 这里如果不设置成flex，图片定位会出现问题，并不知道原因 */
+  /* display: flex; */
+}

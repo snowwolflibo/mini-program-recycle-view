@@ -1,0 +1,3 @@
+<view class="wx-recycle-item">
+  <slot></slot>
+</view>

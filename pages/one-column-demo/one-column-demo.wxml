@@ -1,0 +1,14 @@
+<view class="wrapper">
+<!-- bindscrolltolower绑定触底事件 -->
+  <recycle-view batch="{{batchSetRecycleData}}" id="recycleId" bindscrolltolower="onScrollToLower" class="list">
+  <!-- 这里list-item宽高先定位成160px，120px避免变量引起问题 -->
+  <!-- 实际情况应该会使用到小程序自带的自适应单位rpx，并在需要时转换成px -->
+    <recycle-item wx:for="{{recycleList}}" wx:key="{{item.__index__}}" style="position: absolute; left: {{ item.left }}px; top: {{ item.top }}px; width: {{ item.width }}px; height: {{ item.height }}px">
+      <view class="list-item">
+      <label>{{item.__index__}}</label>
+        <image class="list-image" src="{{baseURL + item.image}}" style="width: {{ item.imageWidth }}px; height: {{ item.imageHeight }}px" bindtap="tapImage"></image>
+      </view>
+    </recycle-item>
+    <view slot="after">下拉刷新...</view>
+  </recycle-view>
+</view>

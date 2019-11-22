@@ -1,0 +1,3 @@
+
+    <button bindtap="showTwoColumnsDemo">一行两列</button>
+    <button bindtap="showOneColumnDemo">一行一列</button>
